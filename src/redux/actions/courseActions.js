@@ -3,7 +3,7 @@ import * as courseApi from "../../api/courseApi";
 import { beginApiCall, apiCallError } from "./apiStatusActions";
 
 export const loadCoursesSuccess = (courses) => {
-  return { type: types.LOAD_COURSES_SUCCESS, course: courses };
+  return { type: types.LOAD_COURSES_SUCCESS, courses: courses };
 };
 export const updateCourseSuccess = (courses) => {
   return { type: types.UPDATE_COURSE_SUCCESS, course: courses };
